@@ -2,7 +2,7 @@
 local E = unpack(ElvUI)
 local L = E.Libs.ACL:NewLocale('ElvUI', 'ruRU')
 
-L["Restrict Pings"] = true
+L["Restrict Pings"] = "Ограничить сигналы (пинги)"
 L["Player"] = "Игрок"
 L["Small"] = "Малый"
 L["Medium"] = "Средний"
@@ -13,8 +13,8 @@ L["ELVUI_DESC"] = ("*ElvUI|r |cFFffffffэто аддон для полной з�
 L["UPDATE_REQUEST"] = "Кажется, возникла проблема с установкой. Пожалуйста, переустановите ElvUI."
 L[" |cff00ff00bound to |r"] = " |cff00ff00назначено для |r"
 L["%s frame has a conflicting anchor point. Forcing the Buffs to be attached to the main unitframe."] = "Фрейм %s содержит конфликтующие точки крепления. Баффы будут принудительно закреплены на самом фрейме."
-L["%s is attempting to share the Private Profile (%s) with you. Would you like to accept the request?"] = true
-L["%s is attempting to share the Global Profile with you. Would you like to accept the request?"] = true
+L["%s is attempting to share the Private Profile (%s) with you. Would you like to accept the request?"] = "%s хочет передать вам личный профиль персонажа (%s). Принять запрос?"
+L["%s is attempting to share the Global Profile with you. Would you like to accept the request?"] = "%s хочет передать вам глобальный профиль. Принять запрос?"
 L["%s is attempting to share the Profile (%s) with you. Would you like to accept the request?"] = "%s хочет передать Вам профиль (%s). Желаете ли Вы принять его?"
 L["(Ctrl & Shift Click) Toggle CPU Profiling"] = "(CTRL & Shift клик) Переключить профайлинг ЦПУ"
 L["(Hold Shift) Memory Usage"] = "(Зажать Shift) Использование памяти"
@@ -108,13 +108,13 @@ L["Debuffs"] = "Дебаффы"
 L["Deficit:"] = "Убыток:"
 L["Delete gray items?"] = "Удалить серый предметы?"
 L["Deposit Reagents"] = "Сложить материалы"
-L["Deposit Warbound Items"] = true
+L["Deposit Warbound Items"] = "Вложить предметы отряда"
 L["Disable Warning"] = "Отключить предупреждение"
 L["Disable"] = "Выключить"
 L["Disabled"] = "Отключено"
 L["Disband Group"] = "Распустить группу"
 L["Discard"] = "Отменить"
-L["Discord"] = true --Doesn't need translating
+L["Discord"] = "Discord"
 L["DND"] = "ДНД"
 L["Do you swear not to post in technical support about something not working without first disabling the addon/module combination first?"] = "Клянетесь ли Вы не постить на форуме технической поддержки, что что-то не работает, до того, как отключите другие аддоны/модули?"
 L["Don't forget to backup your WTF folder, all your profiles and settings are in there."] = "Не забудьте сделать резервную копию своей папки WTF, все Ваши профили и настройки находятся там."
@@ -134,7 +134,7 @@ L["Error resetting UnitFrame."] = "Ошибка сброса рамки юнит
 L["EventToastWidget"] = "Виджет событий"
 L["Experience Bar"] = "Полоса опыта"
 L["Experience"] = "Опыт"
-L["Download complete from %s, would you like to apply changes now?"] = true
+L["Download complete from %s, would you like to apply changes now?"] = "Загрузка от %s завершена. Применить изменения сейчас?"
 L["Finished"] = "Завершить"
 L["Fishy Loot"] = "Улов"
 L["Focus Aura Bars"] = "Полосы аур фокуса"
@@ -176,7 +176,7 @@ L["Importance: |cFF33FF33Low|r"] = "Важность: |cFF33FF33Низкая|r"
 L["Importance: |cffD3CF00Medium|r"] = "Важность: |cffD3CF00Средняя|r"
 L["Importance: |cffFF3333High|r"] = "Важность: |cffFF3333Высокая|r"
 L["In Progress"] = "В процессе"
-L["Include Reagents"] = true
+L["Include Reagents"] = "Включая реагенты"
 L["INCOMPATIBLE_ADDON"] = "%s несовместимо с %s.\nВыберите какой аддон/модуль использовать."
 L["Installation Complete"] = "Установка завершена"
 L["Interrupted %s's |cff71d5ff|Hspell:%d:0|h[%s]|h|r!"] = "Прерван %s. Сбито |cff71d5ff|Hspell:%d:0|h[%s]|h|r!"
@@ -242,7 +242,7 @@ L["Need help? Join our Discord: https://discord.tukui.org"] = "Нужна пом
 L["New Profile will create a fresh profile for this character."] = "\"Новый профиль\" создаст чистый профиль для этого персонажа."
 L["New Profile"] = "Новый профиль"
 L["No bindings set."] = "Нет назначений"
-L["No gray items to sell."] = true
+L["No gray items to sell."] = "Нет серых предметов для продажи."
 L["No Guild"] = "Нет гильдии"
 L["No Loot"] = "Нет добычи"
 L["None"] = "Нет"
@@ -367,7 +367,7 @@ L["To setup chat colors, chat channels and chat font size, right-click the chat 
 L["Toggle Bags"] = "Показать сумки"
 L["Toggle Chat Frame"] = "Показать/скрыть чат"
 L["Toggle Configuration"] = "Конфигурация"
-L["Toggle Mover Mode"] = true
+L["Toggle Mover Mode"] = "Режим перемещения фиксаторов"
 L["Toggle Volume Stream"] = "Вкл/откл звуковой поток"
 L["Tooltip"] = "Подсказка"
 L["TopCenterWidget"] = "Центральный виджет"
@@ -443,6 +443,6 @@ L["EHELP_COMMANDS"] = ([=[Ниже представлен список всех 
  */egrid|r ^64|r или ^128|r или ^256|r  -  Вкл/выкл экранную сетку.
  */edebug|r ^on|r или ^off|r  -  Отключить все аддоны, кроме ElvUI.
   ВАЖНО: */edebug|r ^off|r включит обратно все отключенные В ДАННОЙ СЕССИИ (без /rl) командой */edebug|r ^on|r аддоны.
- */guildlist|r ^minPlayers|r  -  Dumps the sorted list of guilds from the finder.
- */guildapply|r ^"message"|r  -  Applies to the top 5 new guilds with an optional message.
+ */guildlist|r ^minPlayers|r  -  Выводит отсортированный список гильдий из поиска.
+ */guildapply|r ^"сообщение"|r  -  Подает заявку в топ-5 новых гильдий с указанным сообщением.
 ]=]):gsub('*', E.InfoColor):gsub('%^', E.InfoColor2)
